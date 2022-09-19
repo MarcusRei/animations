@@ -1,0 +1,62 @@
+
+body {
+    background-color: #13070C;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: #F13030;
+    border-radius: 50%;
+    animation: bounce 1s linear  infinite;
+}
+
+@keyframes bounce {
+    0% {
+        bottom: 0px;
+        height: 150px;
+        width: 250px;
+    }
+
+    
+
+    50% {
+        bottom: 200px;
+        height: 200px;
+        width: 200px;
+    }
+
+    100% {
+        bottom: 0px;
+        height: 150px;
+        width: 250px;
+    }
+    
+    
+}
+
+.floor {
+    position: absolute;
+    bottom: 360px;
+    width: 600px;
+    background-color: aliceblue;
+    height: 35px;
+}
